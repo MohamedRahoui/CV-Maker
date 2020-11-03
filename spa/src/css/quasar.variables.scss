@@ -1,0 +1,28 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$primary: #EA5297;
+$secondary: #9d9d9c;
+$accent: #F4C617;
+
+$dark: rgb(157, 157, 156);
+
+$positive: #21BA45;
+$negative: #EC655D;
+$info: #52ACD2;
+$warning: #EE7925;
+
+$typography-font-family: 'Montserrat', sans-serif;
+$text-weights: (thin: 100, light: 300, regular: 400, medium: 500, bold: 700, bolder: 800) !default
