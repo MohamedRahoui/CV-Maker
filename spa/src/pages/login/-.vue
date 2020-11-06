@@ -1,4 +1,4 @@
-<script src="./-.js"></script>
+<script src="./-.ts" lang="ts"></script>
 <style scoped src="./-.scss" lang="scss"></style>
 <template>
   <div class="flex flex-center true-full-height bg-primary">
@@ -28,6 +28,3 @@
     <div class="absolute-bottom-right">version 0.0.1</div>
   </div>
 </template>
-
-
-

@@ -16,5 +16,5 @@ class CustomAuthToken(ObtainAuthToken):
         token, created = Token.objects.get_or_create(user=user)
         return Response({
             'token': token.key,
-            'user': ProfileSerializer(user).data
+            'user': ProfileSerializer(user.profile).data
         })

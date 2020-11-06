@@ -1,4 +1,14 @@
+import datetime
+
 from django.db import models
+
+
+def year_choices():
+    return [(y, y) for y in range(1984, datetime.date.today().year + 1)]
+
+
+def month_choices():
+    return [(m, m) for m in range(1, 13)]
 
 
 class BaseModel(models.Model):

@@ -1,4 +1,4 @@
-<script src="./-.js"></script>
+<script src="./-.ts" lang="ts"></script>
 <style lang="scss" src="./-.scss"></style>
 <template>
   <div class="fixed-center text-center">

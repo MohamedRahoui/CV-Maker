@@ -1,0 +1,23 @@
+{
+  "extends": "@quasar/app/tsconfig-preset",
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "target": "es5",
+    "baseUrl": "./",
+    "downlevelIteration": true,
+    "paths": {
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@router/*": [
+        "src/router/*"
+      ],
+      "@store/*": [
+        "src/store/*"
+      ],
+      "@models/*": [
+        "src/models/*"
+      ]
+    }
+  }
+}
