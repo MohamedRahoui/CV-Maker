@@ -13,14 +13,11 @@
       </div>
       <div class="user-info">
         <div class="full-name text-uppercase">{{ fullName() }}</div>
-        <div class="current-experience" v-if="currentExperience()">
-          <div class="title"><b>{{ currentExperience().title }}</b>
-            <span v-if="currentExperience().company">
-              en mission chez <b>{{ currentExperience().company }}</b>
-            </span>
-          </div>
-          <div class="location">{{ currentExperience().location }}</div>
+        <div class="experience-duration">
+          Développeur Full Stack Confirmé <br>
+          4 ans d’expérience
         </div>
+        <q-btn class="download-cv" color="primary" label="Génerer mon CV Conserto"/>
       </div>
     </q-card-section>
   </q-card>

@@ -1,7 +1,7 @@
 <script src="./-.ts" lang="ts"></script>
 <style src="./-.scss" lang="scss"></style>
 <template>
-  <q-layout view="lHh lpR fFf">
+  <q-layout view="lHh LpR lFf">
     <q-header elevated bordered style="margin-left: -1px" class="header-conserto">
       <q-toolbar>
         <q-toolbar-title>
@@ -24,7 +24,7 @@
       bordered
     >
       <!-- Profile info -->
-      <div class="absolute-top bg-accent user-card">
+      <div class="absolute-top bg-white user-card shadow-1">
         <q-avatar size="56px" class="q-mb-sm">
           <img src="~assets/me.jpg">
         </q-avatar>
@@ -52,8 +52,12 @@
              style="bottom: 20px;transform: translate(-50%, -50%);" @click="logout"/>
 
     </q-drawer>
-    <q-drawer show-if-above v-model="drawerRight" side="right" bordered>
-      Right Drawer
+    <q-drawer show-if-above v-model="drawerRight" side="right" bordered content-class="right-drawer">
+      <div class="absolute-center full-width">
+        <q-img src="~assets/conserto-white.svg" width="80%" style="margin: auto; display: block"/>
+        <div class="text-h4 text-center text-bold">Chat</div>
+      </div>
+
     </q-drawer>
     <q-page-container>
       <router-view/>

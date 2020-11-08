@@ -1,8 +1,11 @@
+from rest_framework import viewsets
 from rest_framework.authtoken.models import Token
 from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from profiles.serializers import ProfileSerializer
+from profiles.models import Experience
+from profiles.serializers import ProfileSerializer, ExperienceSerializer
 
 
 class CustomAuthToken(ObtainAuthToken):
@@ -18,3 +21,9 @@ class CustomAuthToken(ObtainAuthToken):
             'token': token.key,
             'user': ProfileSerializer(user.profile).data
         })
+
+
+class ExperienceViewSet(viewsets.ModelViewSet):
+    queryset = Experience.objects.all()
+    serializer_class = ExperienceSerializer
+    permission_classes = [IsAuthenticated]

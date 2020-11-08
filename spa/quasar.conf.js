@@ -15,7 +15,8 @@ module.exports = configure(function (ctx) {
     supportTS: {
       tsCheckerConfig: {
         eslint: true
-      }
+      },
+      transpileOnly: true
     },
 
     // https://quasar.dev/quasar-cli/prefetch-feature

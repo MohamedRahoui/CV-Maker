@@ -18,3 +18,4 @@ export default boot(({ Vue }) => {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   Vue.prototype.$axios = api
 })
+export const API = api

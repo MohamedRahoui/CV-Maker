@@ -3,8 +3,9 @@
 
 <template>
   <q-page class="profile-page">
-    <div class="container ">
+    <div class="container">
       <user-info/>
+      <experience class="experience-component"/>
     </div>
   </q-page>
 </template>

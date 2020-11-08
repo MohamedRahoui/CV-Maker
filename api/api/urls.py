@@ -19,9 +19,10 @@ from django.urls import path, include
 from rest_framework import routers
 from rest_framework.documentation import include_docs_urls
 
-from profiles.views import CustomAuthToken
+from profiles.views import CustomAuthToken, ExperienceViewSet
 
 router = routers.SimpleRouter()
+router.register(r'experiences', ExperienceViewSet)
 
 urlpatterns = [
     url(r'^api/docs/', include_docs_urls(title='CaMiPa API')),

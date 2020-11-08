@@ -39,6 +39,7 @@
 .user-info {
   margin-top: 55px;
   padding: 0 8px;
+  position: relative;
 
   .full-name {
     font-size: 24px;
@@ -53,5 +54,10 @@
 
   .location {
     font-size: 14px;
+  }
+  .download-cv {
+   position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }

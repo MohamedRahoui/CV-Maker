@@ -15,7 +15,16 @@ const errors: Errors = {
     })
   }
 }
+const MONTHS: string[] = ['', 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre']
+
+const tools = {
+  getMonth (month: string): string {
+    if (!month && parseInt(month) > 13) return ''
+    return MONTHS[parseInt(month)]
+  }
+}
 export default boot(({ Vue }) => {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
   Vue.prototype.$errors = errors
+  Vue.prototype.$tools = tools
 })

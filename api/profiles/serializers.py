@@ -35,11 +35,11 @@ class ExperienceSerializer(serializers.ModelSerializer):
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = ('user', 'address', 'experiences')
+        fields = ('user', 'address')
 
     user = UserSerializer()
-    experiences = ExperienceSerializer(many=True, source='experience_set')
 
+    # Clean up this function
     def to_representation(self, instance):
         ret = super().to_representation(instance)
         formatted = dict()
