@@ -5,6 +5,7 @@
   <q-page class="profile-page">
     <div class="container">
       <user-info/>
+      <education class="experience-component"/>
       <experience class="experience-component"/>
     </div>
   </q-page>

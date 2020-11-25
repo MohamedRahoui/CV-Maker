@@ -4,7 +4,7 @@ from django.db import models
 
 
 def year_choices():
-    return [(y, y) for y in range(1984, datetime.date.today().year + 1)]
+    return [(y, y) for y in range(1950, datetime.date.today().year + 1)]
 
 
 def month_choices():

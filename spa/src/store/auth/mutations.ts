@@ -1,6 +1,7 @@
 import { MutationTree } from 'vuex'
 import { get } from 'lodash'
 import Auth from 'src/models/auth'
+import User from '@models/user'
 
 const mutation: MutationTree<Auth> = {
   login (state: Auth, data) {
@@ -16,6 +17,9 @@ const mutation: MutationTree<Auth> = {
       email: ''
     }
     state.token = ''
+  },
+  updateUser (state: Auth, user: User) {
+    state.user = user
   }
 }
 export default mutation

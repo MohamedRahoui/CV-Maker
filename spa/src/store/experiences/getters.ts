@@ -5,6 +5,9 @@ import { ExperienceState } from '@models/experience'
 const getters: GetterTree<ExperienceState, StateInterface> = {
   experiences (state) {
     return state.experiences
+  },
+  fetchedExperiences (state) {
+    return state.fetched
   }
 }
 

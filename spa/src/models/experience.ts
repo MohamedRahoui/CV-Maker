@@ -2,6 +2,7 @@ import base from '@models/base'
 
 export default interface Experience extends base {
   title: string;
+  job_title: string;
   employment_type: string;
   company: string;
   location: string;
@@ -10,6 +11,8 @@ export default interface Experience extends base {
   end_year: number;
   end_month: number;
   description: string;
+  environment: any;
+  tasks: any;
 }
 
 export interface ExperienceState {
@@ -17,4 +20,4 @@ export interface ExperienceState {
   fetched: boolean
 }
 
-export const ExperienceURL = 'experiences/'
+export const ExperienceURL = 'experiences'

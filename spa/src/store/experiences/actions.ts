@@ -12,7 +12,7 @@ const actions: ActionTree<ExperienceState, StateInterface> = {
       return new Promise((resolve, reject) => {
         API.get(ExperienceURL).then(response => {
           commit('fetchExperiences', response.data)
-          resolve(response)
+          resolve(response.data)
         }, error => {
           reject(error)
         })
@@ -21,9 +21,9 @@ const actions: ActionTree<ExperienceState, StateInterface> = {
   },
   updateExperience ({ commit }, experience: Experience) {
     return new Promise((resolve, reject) => {
-      API.put(`${ExperienceURL}${experience.id}/`, experience).then(response => {
+      API.put(`${ExperienceURL}/${experience.id}`, experience).then(response => {
         commit('updateExperience', response.data)
-        resolve(response)
+        resolve(response.data)
       }, error => {
         reject(error)
       })
@@ -31,7 +31,7 @@ const actions: ActionTree<ExperienceState, StateInterface> = {
   },
   deleteExperience ({ commit }, id: Experience['id']) {
     return new Promise((resolve, reject) => {
-      API.delete(`${ExperienceURL}${id}/`).then(response => {
+      API.delete(`${ExperienceURL}/${id}`).then(response => {
         commit('deleteExperience', id)
         resolve(response)
       }, error => {
@@ -43,7 +43,7 @@ const actions: ActionTree<ExperienceState, StateInterface> = {
     return new Promise((resolve, reject) => {
       API.post(ExperienceURL, experience).then(response => {
         commit('createExperience', response.data)
-        resolve(response)
+        resolve(response.data)
       }, error => {
         reject(error)
       })

@@ -16,48 +16,59 @@
   }
 }
 
-.user-picture {
-  background: white;
-  width: 160px;
-  height: 160px;
-  position: absolute;
-  border-radius: 50%;
-  top: -105px;
-  left: 24px;
+.user-info-section {
+  .edit-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
 
-  .picture {
-    width: 154px;
+  .user-picture {
+    background: white;
+    width: 160px;
+    height: 160px;
     position: absolute;
     border-radius: 50%;
-    top: 3px;
-    bottom: 3px;
-    right: 3px;
-    left: 3px;
+    top: -105px;
+    left: 24px;
+
+    .picture {
+      width: 154px;
+      position: absolute;
+      border-radius: 50%;
+      top: 3px;
+      bottom: 3px;
+      right: 3px;
+      left: 3px;
+    }
+  }
+
+  .user-info {
+    margin-top: 55px;
+    padding: 0 8px;
+    position: relative;
+
+    .full-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 3px;
+    }
+
+    .title {
+      font-size: 16px;
+      margin-bottom: 3px;
+    }
+
+    .location {
+      font-size: 14px;
+    }
+
+    .download-cv {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
   }
 }
 
-.user-info {
-  margin-top: 55px;
-  padding: 0 8px;
-  position: relative;
 
-  .full-name {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 3px;
-  }
-
-  .title {
-    font-size: 16px;
-    margin-bottom: 3px;
-  }
-
-  .location {
-    font-size: 14px;
-  }
-  .download-cv {
-   position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-}

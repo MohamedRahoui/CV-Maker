@@ -5,6 +5,8 @@
     "target": "es5",
     "baseUrl": "./",
     "downlevelIteration": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
     "paths": {
       "@pages/*": [
         "src/pages/*"

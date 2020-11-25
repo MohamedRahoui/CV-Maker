@@ -3,12 +3,13 @@ import Vuex, { Store } from 'vuex'
 import VuexPersist from 'vuex-persist'
 import auth from 'src/store/auth'
 import experiences from 'src/store/experiences'
+import educations from 'src/store/education'
 import Auth from 'src/models/auth'
 import { ExperienceState } from 'src/models/experience'
 
 export interface StateInterface {
   auth: Auth;
-  experience:ExperienceState;
+  experience: ExperienceState;
 }
 
 const vuexStorage = new VuexPersist({
@@ -28,7 +29,8 @@ export default store(function ({ Vue }) {
   const Store = new Vuex.Store<StateInterface>({
     modules: {
       auth,
-      experiences
+      experiences,
+      educations
     },
     plugins: [vuexStorage.plugin],
     strict: !!process.env.DEBUGGING

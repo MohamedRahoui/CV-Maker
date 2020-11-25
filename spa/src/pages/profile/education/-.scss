@@ -1,5 +1,13 @@
 .title {
   margin-bottom: 15px;
+  position: relative;
+}
+
+.add-education {
+  position: absolute;
+  right: 16px;
+  top: 5px;
+  z-index: 9;
 }
 
 .edit-form {
