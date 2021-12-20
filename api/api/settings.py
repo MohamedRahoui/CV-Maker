@@ -97,6 +97,7 @@ WSGI_APPLICATION = 'api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# Don't freak out, this DB doesn't exist :D 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
