@@ -16,7 +16,7 @@
     "@types/lodash": "^4.14.164",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
     "@typescript-eslint/parser": "^4.6.1",
-    "axios": "^0.18.1",
+    "axios": "^0.21.2",
     "js-file-download": "^0.4.12",
     "lodash": "^4.17.15",
     "quasar": "^1.14.3",
